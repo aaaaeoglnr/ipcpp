@@ -41,12 +41,14 @@ int main()
 			} 
 		int total = heures1 * 1 + heures2 * 2;
 		cout << "Vous avez loué votre vélo pendant" << endl;
-		cout << heures1;
-		cout << " heure(s) au tarif horaire de "
-           << "1 franc(s)" << endl;
-		cout << heures2;
-		cout << " heure(s) au tarif horaire de "
-           << "2 franc(s)" << endl;
+		if (heures1){
+			cout << heures1;
+			cout << " heure(s) au tarif horaire de 1 franc(s)" << endl;
+		}
+		if (heures2){
+			cout << heures2;
+			cout << " heure(s) au tarif horaire de 2 franc(s)" << endl;
+		}
 		cout << "Le montant total à payer est de "
          << total << " franc(s)." << endl;
 	}
